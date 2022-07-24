@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Zar'; /* this value can be anything you wish - it gets used in the class definition below */
+    src: url('./fonts/IRANSansWeb(FaNum).woff2'); /* add the file path to your font here */
+}
+
+body {
+    font-family: Zar, serif, sans-serif !important;
+}

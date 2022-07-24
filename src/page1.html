@@ -1,0 +1,91 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>به کلینیک ما خوش آمدید</title>
+    <link href="./BS/bootstrap.min.css" rel="stylesheet">
+    <link href="./general.css" rel="stylesheet">
+    <link href="page1.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid border">
+    <div class="row text-center mt-5">
+        <div>واحد آر تی ام اس کلینیک دکتر ذاکر</div>
+        <h4 class="mt-2">سامانه گزارش گیری بیمه تکمیلی</h4>
+    </div>
+    
+    
+    <div class="w-75 mx-auto mt-4">
+    
+        <div class="row mt-5">
+            <div class="col mt-1">
+                <label for="name" class="form-label">نام</label>
+                <input type="text" class="col form-control" id="name" placeholder="نام و نام خانوادگی">
+            </div>
+    
+            <div class="col mt-1">
+                <label for="national-code" class="form-label">کد ملی</label>
+                <input type="text" class="form-control" id="national-code" placeholder="**********">
+            </div>
+        </div>
+    
+        <div class="row mt-5">
+            <div class="col mt-1">
+                <label for="sickness" class="form-label">بیماری</label>
+                <input type="text" class="form-control" id="sickness" value="اضطراب شدید و افسردگی اساسی">
+            </div>
+        
+            <div class="col mt-1">
+                <label for="insurance" class="form-label">نوع بیمه</label>
+                <input type="text" class="form-control" id="insurance" value="تامین اجتماعی">
+            </div>
+        </div>
+
+        
+        <div class="row mt-5">
+            <h5 class="form-label">تاریخ شروع</h5>
+            
+            <div class="col mt-1">
+                <label for="day" class="form-label">روز</label>
+                <input type="text" class="col form-control" id="day" value="15">
+            </div>
+            
+            <div class="col mt-1">
+                <label for="month" class="form-label">ماه</label>
+                <input type="text" class="col form-control" id="month" value="4">
+            </div>
+    
+            <div class="col mt-1">
+                <label for="year" class="form-label">سال</label>
+                <input type="text" class="col form-control" id="year" value="1401">
+            </div>
+        </div>
+        
+    
+        <div class="row mt-5">
+            <h5 class="form-label">جلسات</h5>
+            
+            <div class="col mt-1">
+                <label for="visits" class="form-label">تعداد روز مراجعه (دو جلسه در هر روز)</label>
+                <input type="text" class="col form-control" id="visits" value="30">
+            </div>
+    
+            <div class="col mt-1">
+                <label for="price" class="form-label">قیمت هر جلسه</label>
+                <input type="text" class="col form-control" id="price" value="300000">
+            </div>
+        </div>
+    
+        
+        <div class="row mt-5">
+            <div class="col w-100">
+                <button class="w-100 btn btn-primary" id="report">مشاهده گزارش</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>require('./renderer')</script>
+</body>
+</html>
