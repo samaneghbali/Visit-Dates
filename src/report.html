@@ -1,0 +1,113 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>سامانه گزارش بیمه تکمیلی</title>
+    <link href="./BS/bootstrap.min.css" rel="stylesheet">
+    <link href="./general.css" rel="stylesheet">
+    <link href="report.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid p-2">
+
+    <div class="main-container w-100 h-100 m-auto" style="border: 2px solid dimgray;">
+        
+        <!--// Title //////////////////////////////////////////////////////-->
+        <div class="row text-center font-bold mt-2">
+            <h5>
+                گواهی وجوه پرداختی جهت ارائه به بیمه
+                <span id="insurance"></span>
+            </h5>
+        </div>
+        
+    
+        <!--// Text //////////////////////////////////////////////////////-->
+        <div class="text-center mt-2" style="line-height: 1.3">
+            بدینوسیله گواهی می شود،
+            جناب آقای / سرکار خانم،
+            &nbsp;
+            <span id="name" class="font-bold"></span>
+            &nbsp;
+            با کد ملی:
+            <span id="national-code" class="font-bold"></span>
+            &nbsp;
+            در تاریخ:
+            <span id="day" class="font-bold"></span>
+            /
+            <span id="month" class="font-bold"></span>
+            /
+            <span id="year" class="font-bold"></span>
+            &nbsp;
+            بنا به تجویز جناب آقای دکتر فرامرز ذاکری (متخصص اعصاب و روان) جهت درمان:
+            <span id="sickness" class="font-bold"></span>&nbsp;
+            با دستگاه تحریک مغناطیسی فرا جمجمه ای
+            <span id="rtms" class="font-bold">rTMS</span>&nbsp;
+            به این بخش درمانی مراجعه نمودند و در طی تاریخ های ذیل الذکر
+            <span id="visits" class="font-bold"></span>&nbsp;
+            روز -
+            <span id="sessions" class="font-bold"></span>&nbsp;
+            جلسه،
+            دو قسمت از جمجمه ایشان (چپ / راست) همه روزه تحت درمان قرار گرفت.
+            
+            لازم به ذکر می باشد نامبرده به ازای هر جلسه
+            <span id="price" class="font-bold"></span>&nbsp;
+            تومان و در مجموع
+            <span id="total-price" class="font-bold"></span>&nbsp;
+            تومان به عنوان هزینه درمان نقدا پرداخت کرده است.
+        </div>
+    
+    
+        <!--// Table //////////////////////////////////////////////////////-->
+        <div class="row border border-1 mt-4">
+
+            <div class="col-6">
+                <table id="table-one" class="table table-striped general-table">
+                
+                </table>
+            </div>
+            
+    
+            <div class="col-6">
+                <table id="table-two" class="table table-striped general-table">
+    
+                </table>
+            </div>
+        
+        </div>
+        
+    
+    
+    
+    
+        <!--// Bottom-Text //////////////////////////////////////////////////////-->
+        <div class="text-center mt-2" style="line-height: 1.3">
+            
+            <h5 class="font-bold">امضاء و مهر</h5>
+            
+            <span class="font-bold">
+                توجه: این مرکز جهت رفاه حال مراجعه کنندگان تمامی رزوهای هفته حتی ایام تعطیل رسمی نیز در حال فعالیت می باشد.
+            </span>
+            <br>
+            <span>
+                آدرس: تهران، خیابان شریعتی، نرسیده به ایستگاه مترو شریعتی، کوچه فلسفی، ساختمان پزشکان پرشین، واحد rTMS و روان درمانی.
+            </span>
+    
+            <span>
+                شماره های تماس: 09376792887 - 09024368559
+            </span>
+        </div>
+    
+
+
+
+    </div>
+
+    <div class="row p-1 justify-content-around gap-3 d-print-none">
+        <button class="btn btn-primary col-2" id="print-btn">چاپ گزارش</button>
+        <button class="btn btn-secondary col-2" id="return">بازگشت</button>
+    </div>
+    
+
+<script>require('./report')</script>
+</body>
+</html>
